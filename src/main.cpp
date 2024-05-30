@@ -7,8 +7,7 @@ constexpr int MODULATED_FREQUENCY = 150;  // 150 Or 300 in Hz.
 constexpr int DUTY_CYCLE = 30;            // Or 50 in percentage.
 TGC::Transmitter controller(LED, MODULATED_FREQUENCY, DUTY_CYCLE);
 
-// TODO I should check to remove one of the interrupt functions.
-// TODO and move these to the class.
+// TODO I should check to remove one of the interrupt functions, and move these to the class.
 /**
  * @brief Timer 1 Compare Match B interrupt.
  * This function handles the interrupt by calling the handleInterrupt function of the IRController instance.
